@@ -1,0 +1,28 @@
+<ion-header [translucent]="false">
+  <ion-toolbar class="barcolor">
+    <ion-buttons slot="start">
+      <ion-menu-button auto-hide="false"></ion-menu-button>
+    </ion-buttons>
+    <ion-title></ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="background-image">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">inside</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <div class="card-wrapper">
+    <ion-card class="custom-card">
+      <div class="content-container">
+        <h1>Bienvenido a RegistrAPP</h1>
+        <h2>{{username}}</h2>
+        <ion-button fill="clear">Agregar asistencia</ion-button>
+        <ion-button fill="clear">Revisar Cursos</ion-button>
+        <img src="./assets/img/horario.jpg" alt=""> 
+      </div>
+    </ion-card>
+  </div>
+</ion-content>

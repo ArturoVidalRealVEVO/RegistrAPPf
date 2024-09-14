@@ -1,0 +1,30 @@
+<ion-content [fullscreen]="true">
+  <div class="background-image"></div>
+
+  <div id="container">
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title>RECUPERAR CONTRASEÑA</ion-card-title>
+      </ion-card-header>
+ 
+      <ion-card-content>
+        <div class="icon-lock">
+          <img src="./assets/img/candado.png" alt="Lock Icon">
+        </div>
+
+        <!-- Contenedor para el campo de entrada y su etiqueta -->
+        <div class="input-container">
+          <label for="user-input" class="input-label">Ingresar Usuario:</label>
+          <ion-input id="user-input" [(ngModel)]="user.usuario"></ion-input>
+        </div>
+
+        <p class="info-text">
+          Introduce tu  nombre de usuario y te enviaremos un enlace para que vuelvas a entrar en tu cuenta.
+        </p>
+        <div class="button-group">
+          <ion-button fill="solid" (click)="recuperar()">Recuperar</ion-button>
+        </div>
+      </ion-card-content>
+    </ion-card>
+  </div>
+</ion-content>
